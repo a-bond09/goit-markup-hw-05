@@ -33,6 +33,7 @@
   height: 24px;
   fill: #2e2f42;
   background-color: #e7e9fc;
+  cursor: pointer;
   padding: 8px;
   display: flex;
   justify-content: center;
@@ -72,6 +73,10 @@
   margin-bottom: 4px;
 }
 
+.input-svg-wrapper {
+  position: relative;
+}
+
 .text-input {
   width: 100%;
   border-radius: 4px;
@@ -83,6 +88,21 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: #2e2f42;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .form-icon:focus {
+  fill: #4d5ae5;
+} */
 
 .comment-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
