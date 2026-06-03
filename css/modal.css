@@ -13,10 +13,8 @@
 
 .modal {
   width: 408px;
-  height: 70%;
   max-height: 584px;
   position: relative;
-  overflow: auto;
   padding-right: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -100,10 +98,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .form-icon:focus {
-  fill: #4d5ae5;
-} */
-
 .comment-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -116,20 +110,77 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.comment-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
 .text-input:focus,
 .comment-textarea:focus {
   outline: none;
   border: 1px solid #4d5ae5;
 }
 
-/* Privacy Policy
-line-height: 16px; 
-line-height: 1.33333;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: var(--iris); */
+.text-input:focus + .form-icon {
+  fill: #4d5ae5;
+}
+
+.checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.native-checkbox:checked + .checkbox-label > .custom-checkbox {
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
+.native-checkbox:focus + .checkbox-label > .custom-checkbox {
+  background-color: #404bbf;
+}
+
+.checkbox-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  align-items: baseline;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* fill: transparent;
+  background-color: #ffffff; */
+}
+
+.checkbox-icon {
+  fill: #f4f4fd;
+}
 
 .checkbox-accent {
+  color: #4d5ae5;
+  line-height: 16px;
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
 
@@ -144,7 +195,10 @@ color: var(--iris); */
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  padding: 16px 65px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   /* padding-left: 65px;
   padding-right: 65px; */
 }
