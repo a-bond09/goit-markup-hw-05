@@ -446,6 +446,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-part">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form>
+            <div class="subscribe-wrapper">
+              <label for="subscribe-email" class="subscribe-label"></label>
+              <input
+                type="email"
+                id="subscribe-email"
+                name="email"
+                placeholder="E-mail"
+                class="input-subscribe-email"
+              />
+              <button type="submit" class="subscribe-button">
+                Subscribe
+                <svg width="24" height="24" class="subscribe-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -455,7 +476,7 @@
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="close-modal">
-          <svg width="8" height="8"">
+          <svg width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -515,20 +536,25 @@
           </div>
 
           <div class="checkbox-wrapper">
-            <input type="checkbox" name="form-checkbox" id="form-checkbox" 
-            class="native-checkbox sr-only" />
+            <input
+              type="checkbox"
+              name="form-checkbox"
+              id="form-checkbox"
+              class="native-checkbox sr-only"
+            />
 
             <label for="form-checkbox" class="checkbox-label">
               <span class="custom-checkbox">
                 <svg width="10" height="8" class="checkbox-icon">
-                <use href="./images/icons.svg#icon-check-mark"></use>
-              </svg>
+                  <use href="./images/icons.svg#icon-check-mark"></use>
+                </svg>
               </span>
 
-              <span>I accept the terms and conditions of the
-              <a href="#" class="checkbox-accent">Privacy Policy</a></span>
-              </label
-            >
+              <span
+                >I accept the terms and conditions of the
+                <a href="#" class="checkbox-accent">Privacy Policy</a></span
+              >
+            </label>
           </div>
 
           <button type="submit" class="send-button">Send</button>
