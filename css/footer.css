@@ -87,7 +87,12 @@
   width: 264px;
   height: 40px;
   margin-right: 24px;
-  transition-property: border;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -95,13 +100,13 @@
 .input-subscribe-email::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
 
 .input-subscribe-email:focus {
-  border: 1px solid #31d0aa;
+  border-color: #31d0aa;
   outline: none;
   color: #ffffff;
 }
