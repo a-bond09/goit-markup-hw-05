@@ -17,7 +17,7 @@
 .is-open {
   visibility: visible;
   opacity: 1;
-  pointer-events: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -96,6 +96,7 @@
   width: 360px;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: #fcfcfc;
   padding-left: 38px;
   transition-property: border-color;
   transition-duration: 250ms;
@@ -120,6 +121,7 @@
 .comment-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: #fcfcfc;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -211,6 +213,8 @@
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   color: #ffffff;
   width: 169px;
   padding: 16px 32px;
